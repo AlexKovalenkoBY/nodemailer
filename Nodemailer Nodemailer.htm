@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html class="js csstransforms3d js csstransforms3d" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.79.0">
+<meta name="description" content="Nodemailer is a module for Node.js to send emails">
+<meta name="author" content="Andris Reinman">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nodemailer.com/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://nodemailer.com/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://nodemailer.com/favicon-16x16.png">
+<link rel="shortcut icon" href="https://nodemailer.com/favicon.ico" type="image/x-icon">
+<title>Nodemailer :: Nodemailer</title>
+<link href="Nodemailer%20Nodemailer_files/nucleus.css" rel="stylesheet">
+<link href="Nodemailer%20Nodemailer_files/fontawesome-all.css" rel="stylesheet">
+<link href="Nodemailer%20Nodemailer_files/hybrid.css" rel="stylesheet">
+<link href="Nodemailer%20Nodemailer_files/featherlight.css" rel="stylesheet">
+<link href="Nodemailer%20Nodemailer_files/perfect-scrollbar.css" rel="stylesheet">
+<link href="Nodemailer%20Nodemailer_files/auto-complete.css" rel="stylesheet">
+<link href="Nodemailer%20Nodemailer_files/theme.css" rel="stylesheet">
+<link href="Nodemailer%20Nodemailer_files/hugo-theme.css" rel="stylesheet">
+<link href="Nodemailer%20Nodemailer_files/theme-blue.css" rel="stylesheet">
+<script type="text/javascript" async="" src="Nodemailer%20Nodemailer_files/analytics.js"></script><script src="Nodemailer%20Nodemailer_files/jquery-2.js"></script>
+<style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+<style>
+    #sidebar #header-wrapper {
+        background-color: white;
+    }
+    #sidebar #header-wrapper a {
+        color: #07689f;
+    }
+
+    #ads {
+         
+        max-width: 260px;
+         
+        margin: 3px auto 10px auto;
+         
+        font-size: 13px;
+        color: #07689f;
+    }
+
+    #carbonads {
+        display: block;
+        margin: 0 auto;
+        --width: 180px;
+        --font-size: 14px;
+    }
+
+    #carbonads {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
+            sans-serif;
+        display: block;
+        overflow: hidden;
+        margin-bottom: 20px;
+        max-width: var(--width);
+        border-radius: 4px;
+        text-align: center;
+        box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1);
+        background-color: hsl(0, 0%, 98%);
+        font-size: var(--font-size);
+        line-height: 1.5;
+    }
+
+    #carbonads a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    #carbonads a:hover {
+        color: inherit;
+    }
+
+    #carbonads span {
+        position: relative;
+        display: block;
+        overflow: hidden;
+    }
+
+    .carbon-img {
+        display: block;
+        margin-bottom: 8px;
+        max-width: var(--width);
+        line-height: 1;
+    }
+
+    .carbon-img img {
+        display: block;
+        margin: 0 auto;
+        max-width: var(--width) !important;
+        width: var(--width);
+        height: auto;
+    }
+
+    .carbon-text {
+        display: block;
+        padding: 0 1em 8px;
+    }
+
+    .carbon-poweredby {
+        display: block;
+        padding: 10px var(--font-size);
+        background: repeating-linear-gradient(
+                -45deg,
+                transparent,
+                transparent 5px,
+                hsla(0, 0%, 0%, 0.025) 5px,
+                hsla(0, 0%, 0%, 0.025) 10px
+            )
+            hsla(203, 11%, 95%, 0.4);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 0;
+    }
+
+    #chapter p {
+        text-align: left;
+    }
+
+    code {
+        line-height: 1.5rem;
+    }
+</style>
+<script>
+    var OFID = '5ade1fb4e2982f2638310b10';
+</script>
+<script src="Nodemailer%20Nodemailer_files/c.js"></script>
+<script async="" src="Nodemailer%20Nodemailer_files/js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-51322-34');
+</script>
+</head>
+<body class="" data-url="/about/">
+<nav id="sidebar" class="">
+<div id="header-wrapper">
+<div id="header">
+<a id="logo" href="https://nodemailer.com/">
+<img src="Nodemailer%20Nodemailer_files/nm_logo_200x136.png" alt="Nodemailer">
+</a>
+</div>
+<p>
+<a href="https://outfunnel.com/?utm_source=nodemailer&amp;utm_campaign=nodemailer&amp;utm_medium=header-link">Powered by <b>Outfunnel</b></a>
+</p>
+</div>
+<div class="highlightable ps-container ps-theme-default ps-active-y" data-ps-id="299ee359-bb12-4af9-1c61-ba687f519332" style="height: 759px;">
+<div id="ads">
+<a href="https://moonmail.io/?utm_source=nodmailer&amp;utm_campaign=nodemailer-promo" target="_blank" title="MoonMail - the easiest way to send Email Marketing Newsletters!">
+<img src="Nodemailer%20Nodemailer_files/moonmail-promo.png" alt="MoonMail - the easiest way to send Email Marketing Newsletters!">
+</a>
+</div>
+<ul class="topics">
+<li data-nav-id="/about/" title="Nodemailer" class="dd-item         parent         active                   visited">
+<a href="https://nodemailer.com/about/">
+<b>1. </b>Nodemailer
+</a>
+<ul>
+<li data-nav-id="/about/migrate/" title="Migration" class="dd-item ">
+<a href="https://nodemailer.com/about/migrate/">
+Migration
+</a>
+</li>
+<li data-nav-id="/about/license/" title="License" class="dd-item ">
+<a href="https://nodemailer.com/about/license/">
+License
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id="/usage/" title="Usage" class="dd-item
+        
+        
+        
+        ">
+<a href="https://nodemailer.com/usage/">
+<b>2. </b>Usage
+</a>
+<ul>
+<li data-nav-id="/usage/why-smtp/" title="SMTP? Say what?" class="dd-item ">
+<a href="https://nodemailer.com/usage/why-smtp/">
+SMTP? Say what?
+</a>
+</li>
+<li data-nav-id="/usage/using-gmail/" title="Using Gmail" class="dd-item ">
+<a href="https://nodemailer.com/usage/using-gmail/">
+Using Gmail
+</a>
+</li>
+<li data-nav-id="/usage/bulk-mail/" title="Delivering bulk mail" class="dd-item ">
+<a href="https://nodemailer.com/usage/bulk-mail/">
+Delivering bulk mail
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id="/message/" title="Message configuration" class="dd-item
+        
+        
+        
+        ">
+<a href="https://nodemailer.com/message/">
+<b>3. </b>Message configuration
+</a>
+<ul>
+<li data-nav-id="/message/attachments/" title="Attachments" class="dd-item ">
+<a href="https://nodemailer.com/message/attachments/">
+Attachments
+</a>
+</li>
+<li data-nav-id="/message/alternatives/" title="Alternatives" class="dd-item ">
+<a href="https://nodemailer.com/message/alternatives/">
+Alternatives
+</a>
+</li>
+<li data-nav-id="/message/addresses/" title="Address object" class="dd-item ">
+<a href="https://nodemailer.com/message/addresses/">
+Address object
+</a>
+</li>
+<li data-nav-id="/message/calendar-events/" title="Calendar events" class="dd-item ">
+<a href="https://nodemailer.com/message/calendar-events/">
+Calendar events
+</a>
+</li>
+<li data-nav-id="/message/embedded-images/" title="Embedded images" class="dd-item ">
+<a href="https://nodemailer.com/message/embedded-images/">
+Embedded images
+</a>
+</li>
+<li data-nav-id="/message/list-headers/" title="List headers" class="dd-item ">
+<a href="https://nodemailer.com/message/list-headers/">
+List headers
+</a>
+</li>
+<li data-nav-id="/message/custom-headers/" title="Custom headers" class="dd-item ">
+<a href="https://nodemailer.com/message/custom-headers/">
+Custom headers
+</a>
+</li>
+<li data-nav-id="/message/custom-source/" title="Custom source" class="dd-item ">
+<a href="https://nodemailer.com/message/custom-source/">
+Custom source
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id="/smtp/" title="SMTP transport" class="dd-item
+        
+        
+        
+        ">
+<a href="https://nodemailer.com/smtp/">
+<b>4. </b>SMTP transport
+</a>
+<ul>
+<li data-nav-id="/smtp/envelope/" title="SMTP envelope" class="dd-item ">
+<a href="https://nodemailer.com/smtp/envelope/">
+SMTP envelope
+</a>
+</li>
+<li data-nav-id="/smtp/pooled/" title="Pooled SMTP" class="dd-item ">
+<a href="https://nodemailer.com/smtp/pooled/">
+Pooled SMTP
+</a>
+</li>
+<li data-nav-id="/smtp/testing/" title="Testing SMTP" class="dd-item ">
+<a href="https://nodemailer.com/smtp/testing/">
+Testing SMTP
+</a>
+</li>
+<li data-nav-id="/smtp/oauth2/" title="OAuth2" class="dd-item ">
+<a href="https://nodemailer.com/smtp/oauth2/">
+OAuth2
+</a>
+</li>
+<li data-nav-id="/smtp/customauth/" title="Custom authentication" class="dd-item ">
+<a href="https://nodemailer.com/smtp/customauth/">
+Custom authentication
+</a>
+</li>
+<li data-nav-id="/smtp/proxies/" title="Proxy support" class="dd-item ">
+<a href="https://nodemailer.com/smtp/proxies/">
+Proxy support
+</a>
+</li>
+<li data-nav-id="/smtp/dsn/" title="Delivery status notifications" class="dd-item ">
+<a href="https://nodemailer.com/smtp/dsn/">
+Delivery status notifications
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id="/transports/" title="Other transports" class="dd-item
+        
+        
+        
+        ">
+<a href="https://nodemailer.com/transports/">
+<b>5. </b>Other transports
+</a>
+<ul>
+<li data-nav-id="/transports/sendmail/" title="Sendmail transport" class="dd-item ">
+<a href="https://nodemailer.com/transports/sendmail/">
+Sendmail transport
+</a>
+</li>
+<li data-nav-id="/transports/ses/" title="SES transport" class="dd-item ">
+<a href="https://nodemailer.com/transports/ses/">
+SES transport
+</a>
+</li>
+<li data-nav-id="/transports/stream/" title="Stream transport" class="dd-item ">
+<a href="https://nodemailer.com/transports/stream/">
+Stream transport
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id="/plugins/" title="Plugins" class="dd-item
+        
+        
+        
+        ">
+<a href="https://nodemailer.com/plugins/">
+<b>6. </b>Plugins
+</a>
+<ul>
+<li data-nav-id="/plugins/create/" title="Create plugins" class="dd-item ">
+<a href="https://nodemailer.com/plugins/create/">
+Create plugins
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id="/dkim/" title="DKIM" class="dd-item
+        
+        
+        
+        ">
+<a href="https://nodemailer.com/dkim/">
+<b>7. </b>DKIM
+</a>
+</li>
+<li data-nav-id="/extras/" title="Extra modules" class="dd-item
+        
+        
+        
+        ">
+<a href="https://nodemailer.com/extras/">
+<b>8. </b>Extra modules
+</a>
+<ul>
+<li data-nav-id="/extras/smtp-server/" title="SMTP Server" class="dd-item ">
+<a href="https://nodemailer.com/extras/smtp-server/">
+SMTP Server
+</a>
+</li>
+<li data-nav-id="/extras/smtp-connection/" title="SMTP Connection" class="dd-item ">
+<a href="https://nodemailer.com/extras/smtp-connection/">
+SMTP Connection
+</a>
+</li>
+<li data-nav-id="/extras/mailparser/" title="Mailparser" class="dd-item ">
+<a href="https://nodemailer.com/extras/mailparser/">
+Mailparser
+</a>
+</li>
+<li data-nav-id="/extras/mailcomposer/" title="Mailcomposer" class="dd-item ">
+<a href="https://nodemailer.com/extras/mailcomposer/">
+Mailcomposer
+</a>
+</li>
+<li data-nav-id="/extras/daemons/" title="Node.js daemons" class="dd-item ">
+<a href="https://nodemailer.com/extras/daemons/">
+Node.js daemons
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id="/app/" title="NodemailerApp" class="dd-item
+        
+        
+        
+        ">
+<a href="https://nodemailer.com/app/">
+<b>9. </b>NodemailerApp
+</a>
+</li>
+</ul>
+<section id="footer">
+<div style="text-align: center; margin-bottom:10px;">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="DB26KWR2BQX5W">
+<input type="image" src="Nodemailer%20Nodemailer_files/btn_donate_SM.webp" name="submit" alt="PayPal - The safer, easier way to pay online!" style="display: inline" border="0">
+<img alt="" src="Nodemailer%20Nodemailer_files/pixel.gif" width="1" height="1" border="0">
+</form>
+</div>
+</section>
+<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px; height: 759px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 663px;"></div></div></div>
+</nav>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+<div>
+<div id="top-bar-sticky-wrapper" class="sticky-wrapper" style="height: 48px;"><div id="top-bar" style="">
+<div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle="" class="highlight">
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span class="links">
+<a href="https://nodemailer.com/" class="highlight">Nodemailer</a> &gt; Nodemailer
+</span>
+</div>
+</div></div>
+</div>
+<div id="chapter">
+<div id="body-inner">
+<h1 id="nodemailer">Nodemailer</h1>
+<p><strong>Nodemailer</strong> is a module for Node.js applications to 
+allow easy as cake email sending. The project got started back in 2010 
+when there was no sane option to send email messages, today it is the 
+solution most Node.js users turn to by default.</p>
+<p><strong>Nodemailer</strong> is licensed under <strong>MIT license</strong>. See license details in the <a href="https://nodemailer.com/about/license/" class="highlight">License page</a>. If you are upgrading from Nodemailer v2 or older, then see the light migration guide <a href="https://nodemailer.com/about/migrate" class="highlight">here</a>.</p>
+<pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> install nodemailer
+</code><span class="copy-to-clipboard" title="Copy to clipboard"></span></pre><h3 id="support-nodemailer">Support Nodemailer <span class="anchor" data-clipboard-text="https://nodemailer.com/about/#support-nodemailer"><i class="fas fa-link fa-lg"></i></span></h3>
+<p>If you really like Nodemailer or your business benefits from it 
+financially then I would really appreciate a small donation. You can 
+either use Bitcoin or PayPal for donations.</p>
+<ul>
+<li>Nodemailer Bitcoin wallet is: <code>15Z8ADxhssKUiwP3jbbqJwA21744KMCfTM</code><span class="copy-to-clipboard" title="Copy to clipboard"></span>.</li>
+<li><a href="https://www.paypal.me/nodemailer" class="highlight">Nodemailer PayPal</a></li>
+<li>Become a sponsor in <a href="https://github.com/sponsors/andris9" class="highlight">Github</a></li>
+</ul>
+<h3 id="email-problems">Email problems? <span class="anchor" data-clipboard-text="https://nodemailer.com/about/#email-problems"><i class="fas fa-link fa-lg"></i></span></h3>
+<p>Try out the all new ultimate <a href="https://nodemailer.com/app/" class="highlight">email debugging app by Nodemailer</a>.</p>
+<h3 id="having-trouble-managing-your-excess-domain-names">Having trouble managing your excess domain names? <span class="anchor" data-clipboard-text="https://nodemailer.com/about/#having-trouble-managing-your-excess-domain-names"><i class="fas fa-link fa-lg"></i></span></h3>
+<p>You can park <strong>all</strong> your domains for your future projects at <a href="https://projectpending.com/?utm_source=nodemailer&amp;utm_campaign=nodemailer&amp;utm_medium=header-link" class="highlight">Project Pending</a> free of charge. You get name servers and DNS management, a single HTTPS landing page (or redirect) and an email account.</p>
+<p>Project Pending is a service from the makers of Nodemailer.</p>
+<h3 id="nodemailer-features">Nodemailer features <span class="anchor" data-clipboard-text="https://nodemailer.com/about/#nodemailer-features"><i class="fas fa-link fa-lg"></i></span></h3>
+<ul>
+<li>A single module with <strong>zero dependencies</strong> – code is easily auditable, as there are no dark corners</li>
+<li>Heavy focus on <strong>security</strong>, no-one likes <a href="https://thehackernews.com/2017/01/phpmailer-swiftmailer-zendmail.html" class="highlight">RCE vulnerabilities</a></li>
+<li><strong>Unicode support</strong> to use any characters, including emoji 💪</li>
+<li><strong>Windows support</strong> – you can install it with <a href="https://www.npmjs.com/package/nodemailer" class="highlight">npm</a>
+ on Windows just like any other module, there are no compiled 
+dependencies. Use it hassle free from Azure or from your Windows box</li>
+<li>Use <strong>HTML content</strong>, as well as <strong>plain text</strong> alternative</li>
+<li>Add <strong><a href="https://nodemailer.com/message/attachments/" class="highlight">Attachments</a></strong> to messages</li>
+<li><strong><a href="https://nodemailer.com/message/embedded-images/" class="highlight">Embedded</a></strong> image attachments for HTML content – your design does not get blocked</li>
+<li>Secure email delivery using <strong>TLS/STARTTLS</strong></li>
+<li>Different <strong><a href="https://nodemailer.com/transports/" class="highlight">transport methods</a></strong> in addition to the built-in <strong><a href="https://nodemailer.com/smtp/" class="highlight">SMTP support</a></strong></li>
+<li>Sign messages with <strong><a href="https://nodemailer.com/dkim/" class="highlight">DKIM</a></strong></li>
+<li>Custom <strong><a href="https://nodemailer.com/plugins/" class="highlight">Plugin support</a></strong> for manipulating messages</li>
+<li>Sane <strong><a href="https://nodemailer.com/smtp/oauth2/" class="highlight">OAuth2</a></strong> authentication</li>
+<li><strong><a href="https://nodemailer.com/smtp/proxies/" class="highlight">Proxies</a></strong> for SMTP connections</li>
+<li><strong>ES6 code</strong> – no more unintentional memory leaks, due to hoisted <em>var</em>’s</li>
+<li>Autogenerated email <strong>test accounts</strong> from <a href="https://ethereal.email/" class="highlight">Ethereal.email</a></li>
+</ul>
+<h4 id="requirements">Requirements <span class="anchor" data-clipboard-text="https://nodemailer.com/about/#requirements"><i class="fas fa-link fa-lg"></i></span></h4>
+<ul>
+<li><strong>Node.js v6.0.0</strong> or newer. That’s it.</li>
+</ul>
+<p>If you are able to run Node.js version 6 or newer, then you can use 
+Nodemailer. There are no platform or resource specific requirements. All
+ public Nodemailer methods support both callbacks and Promises (if 
+callback is omitted). You need to have at least Node v8.0.0 if you want 
+to use <em>async..await</em> with Nodemailer.</p>
+<h4 id="tldr">TL;DR <span class="anchor" data-clipboard-text="https://nodemailer.com/about/#tldr"><i class="fas fa-link fa-lg"></i></span></h4>
+<p>In short, what you need to do to send messages, would be the following:</p>
+<ol>
+<li>Create a Nodemailer transporter using either <a href="https://nodemailer.com/smtp/" class="highlight">SMTP</a> or <a href="https://nodemailer.com/transports/" class="highlight">some other</a> transport mechanism</li>
+<li>Set up <a href="https://nodemailer.com/message/" class="highlight">message options</a> (who sends what to whom)</li>
+<li>Deliver the message object using the <strong>sendMail()</strong> method of your previously created transporter</li>
+</ol>
+<h4 id="example">Example <span class="anchor" data-clipboard-text="https://nodemailer.com/about/#example"><i class="fas fa-link fa-lg"></i></span></h4>
+<p>This is a complete example to send an email with plain text and HTML body</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript hljs" data-lang="javascript"><span style="color:#e6db74"><span class="hljs-meta">"use strict"</span></span>;
+<span style="color:#66d9ef"><span class="hljs-keyword">const</span></span> <span style="color:#a6e22e">nodemailer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e"><span class="hljs-built_in">require</span></span>(<span style="color:#e6db74"><span class="hljs-string">"nodemailer"</span></span>);
+
+<span style="color:#75715e"><span class="hljs-comment">// async..await is not allowed in global scope, must use a wrapper</span>
+</span><span style="color:#75715e"></span><span style="color:#66d9ef"><span class="hljs-keyword">async</span></span> <span style="color:#66d9ef"><span class="hljs-function"><span class="hljs-keyword">function</span></span></span><span class="hljs-function"> </span><span style="color:#a6e22e"><span class="hljs-function"><span class="hljs-title">main</span></span></span><span class="hljs-function">(<span class="hljs-params"></span>) </span>{
+  <span style="color:#75715e"><span class="hljs-comment">// Generate test SMTP service account from ethereal.email</span>
+</span><span style="color:#75715e"></span>  <span style="color:#75715e"><span class="hljs-comment">// Only needed if you don't have a real mail account for testing</span>
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef"><span class="hljs-keyword">let</span></span> <span style="color:#a6e22e">testAccount</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef"><span class="hljs-keyword">await</span></span> <span style="color:#a6e22e">nodemailer</span>.<span style="color:#a6e22e">createTestAccount</span>();
+
+  <span style="color:#75715e"><span class="hljs-comment">// create reusable transporter object using the default SMTP transport</span>
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef"><span class="hljs-keyword">let</span></span> <span style="color:#a6e22e">transporter</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nodemailer</span>.<span style="color:#a6e22e">createTransport</span>({
+    <span style="color:#a6e22e">host</span><span style="color:#f92672">:</span> <span style="color:#e6db74"><span class="hljs-string">"smtp.ethereal.email"</span></span>,
+    <span style="color:#a6e22e">port</span><span style="color:#f92672">:</span> <span style="color:#ae81ff"><span class="hljs-number">587</span></span>,
+    <span style="color:#a6e22e">secure</span><span style="color:#f92672">:</span> <span style="color:#66d9ef"><span class="hljs-literal">false</span></span>, <span style="color:#75715e"><span class="hljs-comment">// true for 465, false for other ports</span>
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">auth</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">user</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">testAccount</span>.<span style="color:#a6e22e">user</span>, <span style="color:#75715e"><span class="hljs-comment">// generated ethereal user</span>
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">pass</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">testAccount</span>.<span style="color:#a6e22e">pass</span>, <span style="color:#75715e"><span class="hljs-comment">// generated ethereal password</span>
+</span><span style="color:#75715e"></span>    },
+  });
+
+  <span style="color:#75715e"><span class="hljs-comment">// send mail with defined transport object</span>
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef"><span class="hljs-keyword">let</span></span> <span style="color:#a6e22e">info</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef"><span class="hljs-keyword">await</span></span> <span style="color:#a6e22e">transporter</span>.<span style="color:#a6e22e">sendMail</span>({
+    <span style="color:#a6e22e"><span class="hljs-keyword">from</span></span><span style="color:#f92672">:</span> <span style="color:#e6db74"><span class="hljs-string">'"Fred Foo 👻" &lt;foo@example.com&gt;'</span></span>, <span style="color:#75715e"><span class="hljs-comment">// sender address</span>
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">to</span><span style="color:#f92672">:</span> <span style="color:#e6db74"><span class="hljs-string">"bar@example.com, baz@example.com"</span></span>, <span style="color:#75715e"><span class="hljs-comment">// list of receivers</span>
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">subject</span><span style="color:#f92672">:</span> <span style="color:#e6db74"><span class="hljs-string">"Hello ✔"</span></span>, <span style="color:#75715e"><span class="hljs-comment">// Subject line</span>
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">text</span><span style="color:#f92672">:</span> <span style="color:#e6db74"><span class="hljs-string">"Hello world?"</span></span>, <span style="color:#75715e"><span class="hljs-comment">// plain text body</span>
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">html</span><span style="color:#f92672">:</span> <span style="color:#e6db74"><span class="hljs-string">"&lt;b&gt;Hello world?&lt;/b&gt;"</span></span>, <span style="color:#75715e"><span class="hljs-comment">// html body</span>
+</span><span style="color:#75715e"></span>  });
+
+  <span style="color:#a6e22e"><span class="hljs-built_in">console</span></span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74"><span class="hljs-string">"Message sent: %s"</span></span>, <span style="color:#a6e22e">info</span>.<span style="color:#a6e22e">messageId</span>);
+  <span style="color:#75715e"><span class="hljs-comment">// Message sent: &lt;b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com&gt;</span>
+</span><span style="color:#75715e"></span>
+  <span style="color:#75715e"><span class="hljs-comment">// Preview only available when sending through an Ethereal account</span>
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e"><span class="hljs-built_in">console</span></span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74"><span class="hljs-string">"Preview URL: %s"</span></span>, <span style="color:#a6e22e">nodemailer</span>.<span style="color:#a6e22e">getTestMessageUrl</span>(<span style="color:#a6e22e">info</span>));
+  <span style="color:#75715e"><span class="hljs-comment">// Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...</span>
+</span><span style="color:#75715e"></span>}
+
+<span style="color:#a6e22e">main</span>().<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e"><span class="hljs-built_in">console</span></span>.<span style="color:#a6e22e">error</span>);
+</code><span class="copy-to-clipboard" title="Copy to clipboard"></span></pre></div><h3 id="examples">Examples <span class="anchor" data-clipboard-text="https://nodemailer.com/about/#examples"><i class="fas fa-link fa-lg"></i></span></h3>
+<ul>
+<li><strong>Nodemailer AMQP example</strong> is an example of using RabbitMQ to manage Nodemailer email messages. <a href="https://github.com/nodemailer/nodemailer-amqp-example" class="highlight">Source</a>.</li>
+</ul>
+<p>Output of the the <a href="https://github.com/nodemailer/nodemailer/blob/master/examples/full.js" class="highlight">example script</a> as shown by the <a href="https://ethereal.email/" class="highlight">Ethereal</a> mail catching service:</p>
+<p><a href="https://cldup.com/D5Cj_C1Vw3.png" data-featherlight="image"><img src="Nodemailer%20Nodemailer_files/D5Cj_C1Vw3.png" alt=""></a></p>
+<h3 id="source">Source <span class="anchor" data-clipboard-text="https://nodemailer.com/about/#source"><i class="fas fa-link fa-lg"></i></span></h3>
+<p>Nodemailer source can be found from <a href="https://github.com/nodemailer/nodemailer/" class="highlight">Github</a>.</p>
+<hr>
+<p>Nodemailer is created by <a href="https://github.com/andris9" class="highlight">Andris Reinman</a>. The Nodemailer logo was designed by <a href="https://www.behance.net/kristjansen" class="highlight">Sven Kristjansen</a>.</p>
+<footer class=" footline">
+</footer>
+</div>
+</div>
+</div>
+<div id="navigation">
+<a class="nav nav-prev" href="https://nodemailer.com/" title="Nodemailer"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href="https://nodemailer.com/about/migrate/" title="Migration" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+</div>
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+<div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>
+<script src="Nodemailer%20Nodemailer_files/clipboard.js"></script>
+<script src="Nodemailer%20Nodemailer_files/perfect-scrollbar.js"></script>
+<script src="Nodemailer%20Nodemailer_files/perfect-scrollbar_002.js"></script>
+<script src="Nodemailer%20Nodemailer_files/jquery.js"></script>
+<script src="Nodemailer%20Nodemailer_files/featherlight.js"></script>
+<script src="Nodemailer%20Nodemailer_files/html5shiv-printshiv.js"></script>
+<script src="Nodemailer%20Nodemailer_files/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="Nodemailer%20Nodemailer_files/modernizr.js"></script>
+<script src="Nodemailer%20Nodemailer_files/learn.js"></script>
+<script src="Nodemailer%20Nodemailer_files/hugo-learn.js"></script>
+<link href="Nodemailer%20Nodemailer_files/mermaid.css" type="text/css" rel="stylesheet">
+<script src="Nodemailer%20Nodemailer_files/mermaid.js"></script>
+<script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+
+
+<img src="Nodemailer%20Nodemailer_files/l.gif" style="display:block;position:absolute;width:1px;height:1px;" alt="" role="presentation" aria-hidden="true" width="1" height="1"></body></html>
