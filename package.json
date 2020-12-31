@@ -2,9 +2,10 @@
   "name": "from_Aris_with_Love",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "From_Aris_with_Love_sendmail_.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./From_Aris_with_Love_sendmail_.js"
   },
   "author": "",
   "license": "ISC",
