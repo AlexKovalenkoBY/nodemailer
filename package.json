@@ -1,11 +1,11 @@
 {
-  "name": "from_Aris_with_Love",
+  "name": "SendfromAriswithLove-01",
   "version": "1.0.0",
-  "description": "",
-  "type": "module",
+  "description": "test sender from JS",
+
   "main": "From_Aris_with_Love_sendmail_.js",
   "scripts": {
-    "test_node": "node From_Aris_with_Love_sendmail_.js"
+    "test_node": "node ./From_Aris_with_Love_sendmail_.js"
   },
   "author": "",
   "license": "ISC",
