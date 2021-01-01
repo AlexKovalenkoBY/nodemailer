@@ -1,7 +1,13 @@
 "use strict";
 const nodemailer = require("nodemailer");
+<<<<<<< HEAD
 
 import {recipients} from './emails.js';
+=======
+//var nodemailer = require("nodemailer")
+//import  "./emails.js";
+import * as addresses from './emails.js';
+>>>>>>> 831f2b62c77b5cf0fb956d85b4472506a5a7632f
 
 // async..await is not allowed in global scope, must use a wrapper
 async function main() {
