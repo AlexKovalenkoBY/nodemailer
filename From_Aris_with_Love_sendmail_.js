@@ -1,8 +1,13 @@
 "use strict";
 const nodemailer = require("nodemailer");
+import {a, b} from './my-module.js';
+a = 5;
+b = 6;
+//import {recipients} from './emails.js';
 //var nodemailer = require("nodemailer")
 //import  "./emails.js";
-const recipients = require("./emails")
+//const recipients = require("./emails")
+
 /*const recipients = [
   ["8_bezverhova_104" , "M.Bezverkhova@belapb.by" ],
   ["8_chehovich_903" , "Чехович Юлия Петровна <Y.Chekhovich@belapb.by>"],

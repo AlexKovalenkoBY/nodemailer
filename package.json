@@ -1,8 +1,7 @@
 {
-  "name": "SendfromAriswithLove-01",
-  "version": "1.0.0",
+  "name": "my_Sender",
+  "version": "1.0.1",
   "description": "test sender from JS",
-
   "main": "From_Aris_with_Love_sendmail_.js",
   "scripts": {
     "test_node": "node ./From_Aris_with_Love_sendmail_.js"
@@ -10,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "chai": "^4.2.0",
     "mocha": "^7.0.1",
     "sinon": "^8.1.1"
