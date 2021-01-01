@@ -5,7 +5,11 @@
 
   "main": "From_Aris_with_Love_sendmail_.js",
   "scripts": {
+<<<<<<< HEAD
     "test_node": "node ./From_Aris_with_Love_sendmail_.js"
+=======
+    "test": "node ./From_Aris_with_Love_sendmail_.js"
+>>>>>>> 88067c515bba6bbd9e730d53f92972d454bf4ae6
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +19,7 @@
     "sinon": "^8.1.1"
   },
   "dependencies": {
-    "nodemailer": "^6.4.17",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "nodemailer": "^6.4.17"
   }
 }

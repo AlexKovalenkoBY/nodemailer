@@ -1,7 +1,12 @@
 "use strict";
 const nodemailer = require("nodemailer");
+<<<<<<< HEAD
+
+import {recipients} from './emails.js';
+=======
 //var nodemailer = require("nodemailer")
 //import  "./emails.js";
+<<<<<<< HEAD
 //const recipients = require("./emails")
 const recipients = [
   ["8_bezverhova_104" , "M.Bezverkhova@belapb.by" ],
@@ -10,6 +15,11 @@ const recipients = [
   ["8_Lyakina_468", "Лякина Н.А. [Проектно-процессный офис] <n.lyakina@belapb.by>"],
   ["8_Packevich_032", "Пацкевич Д.А. [Управление инкассации] <d.packevich@belapb.by>"]
   ];
+=======
+import * as addresses from './emails.js';
+>>>>>>> 831f2b62c77b5cf0fb956d85b4472506a5a7632f
+
+>>>>>>> 88067c515bba6bbd9e730d53f92972d454bf4ae6
 // async..await is not allowed in global scope, must use a wrapper
 async function main() {
   // Generate test SMTP service account from ethereal.email
