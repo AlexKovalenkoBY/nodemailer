@@ -2,7 +2,6 @@
 const nodemailer = require("nodemailer");
 const { recipients } = require('./emails');
 var fs = require('fs');
-//let file = null;
 let emailBody = null;
 
 for (let i = 0; i < recipients.length; i++) {
@@ -12,15 +11,15 @@ for (let i = 0; i < recipients.length; i++) {
     try {
        emailBody = fs.readFileSync(filename, 'utf8');
       console.log(emailBody);  
-      main(emailBody).catch(console.error)    ;  
+      main(emailBody, /*'a.kovalenko@belapb.by'*/ recipients[i][1]).catch(console.error)    ;  
   } catch(e) {
       console.log('Error:', e.stack);
   }
 
 }
 
-//main("test");
-async function main(emailBody) {
+
+async function main(emailBody, recipient) {
   // Generate test SMTP service account from ethereal.email
   // Only needed if you don't have a real mail account for testing
   // let testAccount = await nodemailer.createTestAccount();
@@ -46,12 +45,12 @@ async function main(emailBody) {
   // send mail with defined transport object
   let info = await transporter.sendMail({
     from: 'a.kovalenko@belapb.by', // sender address
-    to: 'a.kovalenko@belapb.by', // list of receivers
+
+    to: recipient, // list of receivers
+
     subject: "✔ From Aris with Love.... ", // Subject line
-    //text: "Hello! ✔ \n  From Aris with Love.... " , // plain text body
-    //text: ""+emailBody, // plain text body
+   
     html: "<br>✔ " +"<br>"+emailBody.split('\n').join('</br>')+ "</br>", // html body
-    //html: "<b>"+ emailBody + "</b>", // html body
 
   });
 
