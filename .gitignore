@@ -1,4 +1,14 @@
 node_modules
 Nodemailer Nodemailer_files
 8_*.txt
-*2021
+*2021*.*
+"cписок объектов, у которыx более 1 входящей связи.*"
+*.csv
+"*.xls"
+.gitignore
+.gitignore
+.csv
+"Протокол *.txt"
+*.xls
+*.doc
+*.rtf

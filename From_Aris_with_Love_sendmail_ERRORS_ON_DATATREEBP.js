@@ -6,7 +6,7 @@ let emailBody = null;
 
 for (let i = 0; i < recipients.length; i++) {
   
-   const filename = "./"+recipients[i][0] + '.txt';
+   const filename = "./"+recipients[i][0] + "_BPerr"+ '.txt';
     //emailBody = null;
     try {
      
@@ -14,9 +14,6 @@ for (let i = 0; i < recipients.length; i++) {
       console.log(emailBody); 
       if (emailBody.length >145 ) {
     main(emailBody, /*'a.kovalenko@belapb.by'*/ recipients[i][1]).catch(console.error)    ;  
-      }
-      else {
-        main("Уважаемый коллега!"+ "\n"+ "При формировании справочника подпроцессов по закрепленным за Вами БП ошибок не выявлено." +"\n"+ "Вы умница и молодец!", /*'a.kovalenko@belapb.by'*/ recipients[i][1]).catch(console.error)    ;  
       }
   } catch(e) {
       console.log('Error:', e.stack);
@@ -54,7 +51,7 @@ async function main(emailBody, recipient) {
 
     to: recipient, // list of receivers
 
-    subject: "✔ from Aris with Love.... ", // Subject line
+    subject: "✔ from Aris with Love....Part 2 - errors on the creating DATATREEBP.CSV ", // Subject line
    
     html: "<br>✔ " +"<br>"+emailBody.split('\n').join('</br>')+ "</br>", // html body
 

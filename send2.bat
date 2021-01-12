@@ -1,5 +1,6 @@
 @echo on
 node ./From_Aris_with_Love_sendmail_.js
+node ./From_Aris_with_Love_sendmail_ERRORS_ON_DATATREEBP.js
 for /f "tokens=1,2,3,4 delims=/. " %%a in ('date /t') do set _myDate=%%a%%b%%c
 rem echo %_myDate%
 if not exist %_myDate% md %_myDate%
