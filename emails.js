@@ -1,3 +1,11 @@
+/*
+В МАССИВЕ УКАЗАНЫ ИМЕНА ФАЙЛОВ БЕЗ РАСШИРЕНИЙ И АДРЕСА ПОЛУЧАТЕЛЕЙ ПИСЕМ
+НАПРИМЕР 
+ФАЙЛ 8_chehovich_903.TXT БУДЕТ ОТПРАВЛЕН "Чехович Юлия Петровна <Y.Chekhovich@belapb.by>"
+СТРУКТУРУ ФАЙЛА ЛОМАТЬ НЕЛЬЗЯ 
+МЕНЯТЬ  МОЖНО 
+
+*/
 const recipients = [
 ["8_bezverhova_104" , "M.Bezverkhova@belapb.by" ],
 ["8_chehovich_903" , "Чехович Юлия Петровна <Y.Chekhovich@belapb.by>"],

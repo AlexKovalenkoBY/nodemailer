@@ -36,7 +36,7 @@ async function main(emailBody, recipient) {
     secure: true, // true for 465, false for other ports
     auth: {
       user: "A.Kovalenko@belapb.by", // generated ethereal user
-      pass: "Friend_67", // generated ethereal password
+      pass: "Friend_89", // generated ethereal password
     },
 
   });
